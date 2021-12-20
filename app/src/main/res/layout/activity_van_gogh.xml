@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VanGogh">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="338dp"
+        android:layout_height="240dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553">
+
+        <TextView
+            android:id="@+id/TEXT_STATUS_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:text="The unique fame that Leonardo enjoyed in his lifetime and that, filtered by historical criticism, has remained undimmed to the present day rests largely on his unlimited desire for knowledge, which guided all his thinking and behaviour. An artist by disposition and endowment, he considered his eyes to be his main avenue to knowledge; to Leonardo, sight was man’s highest sense because it alone conveyed the facts of experience immediately, correctly, and with certainty. Hence, every phenomenon perceived became an object of knowledge, and saper vedere (“knowing how to see”) became the great theme of his studies. He applied his creativity to every realm in which graphic representation is used: he was a painter, sculptor, architect, and engineer. But he went even beyond that. He used his superb intellect, unusual powers of observation, and mastery of the art of drawing to study nature itself, a line of inquiry that allowed his dual pursuits of art and science to flourish.  Life and works Early period: Florence Leonardo’s parents were unmarried at the time of his birth. His father, Ser Piero, was a Florentine notary and landlord, and his mother, Caterina, was a young peasant woman who shortly thereafter married an artisan. Leonardo grew up on his father’s family’s estate, where he was treated as a “legitimate” son and received the usual elementary education of that day: reading, writing, and arithmetic. Leonardo did not seriously study Latin, the key language of traditional learning, until much later, when he acquired a working knowledge of it on his own. He also did not apply himself to higher mathematics—advanced geometry and arithmetic—until he was 30 years old, when he began to study it with diligent tenacity." />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="119dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SCROLLER_ID"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/starry" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="55dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="17dp"
+        android:text="The Starry Night, June 1889. Museum of Modern Art, New York"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="161dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_shape"
+        android:onClick="backPageGogh"
+        android:text="Check Out The Other"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/SCROLLER_ID"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="166dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="32dp"
+        android:text="VINCENT VAN GOGH"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="75dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@+id/SCROLLER_ID"
+        app:layout_constraintTop_toBottomOf="@+id/SCROLLER_ID"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/self" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="16dp"
+        android:text="Still Life: Vase with Fourteen Sunflowers, August 1888. National Gallery, London"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:text="1889, Courtauld Institute of Art, London"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="91dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SCROLLER_ID"
+        app:layout_constraintTop_toBottomOf="@+id/SCROLLER_ID"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/flowers" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="159dp"
+        android:layout_height="183dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/SCROLLER_ID"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SCROLLER_ID"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/van" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

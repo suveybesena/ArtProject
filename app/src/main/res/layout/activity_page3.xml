@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page3">
+
+    <TextView
+        android:id="@+id/page2WelcomeText"
+        android:layout_width="367dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:text="İsim"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="253dp"
+        android:layout_height="445dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout11"
+        app:layout_constraintTop_toBottomOf="@+id/page2WelcomeText"
+        app:layout_constraintVertical_bias="0.666">
+
+        <TextView
+            android:id="@+id/daVinciText"
+            android:layout_width="240dp"
+            android:layout_height="47dp"
+            android:layout_margin="2dp"
+            android:text="LEONARDO DA VINCI"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="161dp"
+            android:layout_height="29dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_shape"
+            android:onClick="davinci"
+            android:shadowColor="#421E1E"
+            android:text="Explore more"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#5E1818"
+            android:textColorHint="#AC4A4A"
+            android:textColorLink="#C38383"
+            app:rippleColor="#00AC7C7C"
+            app:strokeColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/goghText"
+            android:layout_width="240dp"
+            android:layout_height="47dp"
+
+            android:layout_margin="2dp"
+            android:text="VINCENT VAN GOGH"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="165dp"
+            android:layout_height="28dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_shape"
+            android:onClick="gogh"
+            android:text="Explore more"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/picassoText"
+            android:layout_width="240dp"
+            android:layout_height="47dp"
+            android:layout_margin="2dp"
+            android:text="MICHELANGELO"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_shape"
+            android:onClick="michelangelo"
+            android:text="Explore more"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="240dp"
+            android:layout_height="47dp"
+            android:layout_margin="2dp"
+            android:text="PABLO PICASSO"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_shape"
+            android:onClick="picasso"
+            android:text="Explore more"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="102dp"
+        android:layout_height="471dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page2WelcomeText"
+        app:layout_constraintVertical_bias="0.6">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="88dp"
+            android:layout_height="96dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/davinci2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="90dp"
+            android:layout_height="92dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/gogh" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="87dp"
+            android:layout_height="94dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/michelagelo" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="78dp"
+            android:layout_height="122dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/picasso" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="372dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page2WelcomeText"
+        app:layout_constraintVertical_bias="0.25" />
+</androidx.constraintlayout.widget.ConstraintLayout>
